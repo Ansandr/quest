@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Lorem Ipsum</title>
+  <style>
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: 'Courier New', monospace;
+    }
+    
+    .form {
+      display: flex;
+      flex-direction: column;
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      border: 2px solid #fff;
+      border-radius: 5px;
+    }
+    
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    input[type="password"], /* Added password input type */
+    textarea {
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 2px solid #fff;
+      border-radius: 5px;
+      background-color: transparent;
+      color: #fff;
+      font-family: 'Courier New', monospace;
+    }
+    
+    .submit {
+      padding: 10px 20px;
+      background-color: #fff;
+      color: #000;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .form.hidden {
+      visibility: hidden;
+    }
+
+    h1 {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h1>Тут нічого нема</h1>
+  <div class="form hidden">
+    <p>О ні! Мене знайшли</p>
+    <label for="password">Пароль:</label><br> <!-- Added password label -->
+    <input type="text" id="password" name="password"><br><br> <!-- Added password input field -->
+      
+    <button class="submit" onclick="checkPassword()">Продовжити</button>
+  </div>
+  <div id="quest">
+
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
